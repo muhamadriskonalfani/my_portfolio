@@ -9,14 +9,14 @@
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-        <title>Portfolio website complete</title>
+        <title>Alfan | Portfolio</title>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">Marlon</a>
+                    <a href="#" class="nav__logo">Alfan</a>
                 </div>
 
                 <div class="nav__menu" id="nav-menu">
@@ -39,7 +39,7 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Marlon</span><br> Web Designer</h1>
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Alfan</span><br> Web Developer</h1>
 
                     <a href="#" class="button">Contact</a>
                 </div>
@@ -73,8 +73,9 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Marlon</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
+                        <h2 class="about__subtitle">I'am Alfan</h2>
+                        <p class="about__text">I am an Informatics student with an interest in web and mobile application development. I enjoy learning new technologies and developing applications that are functional, useful, and easy to use.</p><br> 
+                        <p class="about__text">I have experience developing applications using Laravel, Flutter, PHP, MySQL, REST API, and Firebase. I am particularly interested in backend development, mobile application development, and building systems that can solve real-world problems.</p>
                     </div>                                   
                 </div>
             </section>
@@ -85,8 +86,8 @@
 
                 <div class="skills__container bd-grid">          
                     <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+                        <h2 class="skills__subtitle">Technical Skills</h2>
+                        <p class="skills__text">I have experience working with various technologies for web and mobile application development. My main interests include backend development, mobile application development, database management, and API integration.</p>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-html5 skills__icon'></i>
@@ -135,6 +136,9 @@
                                 <span class="skills__percentage">85%</span>
                             </div>
                         </div>
+                        <button type="button" class="skills__more button" id="skills-more">
+                            More Skills
+                        </button>
                     </div>
                     
                     <div>              
@@ -142,6 +146,79 @@
                     </div>
                 </div>
             </section>
+
+            <!--===== SKILLS MODAL =====-->
+            <div class="skills-modal" id="skills-modal">
+
+                <div class="skills-modal__content">
+
+                    <button
+                        type="button"
+                        class="skills-modal__close"
+                        id="skills-modal-close"
+                        aria-label="Close modal">
+                        &times;
+                    </button>
+
+                    <h2 class="skills-modal__title">More Skills</h2>
+
+                    <div class="skills-modal__list">
+
+                        <div class="skills-modal__item">
+                            <i class='bx bxl-php'></i>
+                            <span>PHP</span>
+                        </div>
+
+                        <div class="skills-modal__item">
+                            <i class='bx bx-code-alt'></i>
+                            <span>Laravel</span>
+                        </div>
+
+                        <div class="skills-modal__item">
+                            <i class='bx bxl-flutter'></i>
+                            <span>Flutter</span>
+                        </div>
+
+                        <div class="skills-modal__item">
+                            <i class='bx bx-mobile'></i>
+                            <span>Dart</span>
+                        </div>
+
+                        <div class="skills-modal__item">
+                            <i class='bx bx-data'></i>
+                            <span>MySQL</span>
+                        </div>
+
+                        <div class="skills-modal__item">
+                            <i class='bx bx-cloud'></i>
+                            <span>Firebase</span>
+                        </div>
+
+                        <div class="skills-modal__item">
+                            <i class='bx bx-transfer'></i>
+                            <span>REST API</span>
+                        </div>
+
+                        <div class="skills-modal__item">
+                            <i class='bx bxl-git'></i>
+                            <span>Git</span>
+                        </div>
+
+                        <div class="skills-modal__item">
+                            <i class='bx bxl-github'></i>
+                            <span>GitHub</span>
+                        </div>
+
+                        <div class="skills-modal__item">
+                            <i class='bx bxl-bootstrap'></i>
+                            <span>Bootstrap</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
@@ -167,7 +244,218 @@
                         <img src="assets/img/work6.jpg" alt="">
                     </a>
                 </div>
+                <div class="work__container bd-grid">
+
+                    <!-- PROJECT 1 -->
+                    <div class="work__card">
+                        <img src="assets/img/work1.jpg" alt="Student Career Center">
+
+                        <div class="work__overlay">
+                            <h3>Student Career Center (SCC)</h3>
+                            <p>Web & Mobile Application</p>
+
+                            <button
+                                type="button"
+                                class="work__button"
+                                data-project="scc">
+                                View Project
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- PROJECT 2 -->
+                    <div class="work__card">
+                        <img src="assets/img/work2.jpg" alt="Portfolio Website">
+
+                        <div class="work__overlay">
+                            <h3>Portfolio Website</h3>
+                            <p>Web Development</p>
+
+                            <button
+                                type="button"
+                                class="work__button"
+                                data-project="portfolio">
+                                View Project
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- PROJECT 3 -->
+                    <div class="work__card">
+                        <img src="assets/img/work3.jpg" alt="Web Application">
+
+                        <div class="work__overlay">
+                            <h3>Web Application</h3>
+                            <p>Web Development</p>
+
+                            <button
+                                type="button"
+                                class="work__button"
+                                data-project="web-app">
+                                View Project
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
             </section>
+
+            <!--===== PROJECT MODALS =====-->
+
+            <!-- SCC MODAL -->
+            <div class="work-modal" id="modal-scc">
+                <div class="work-modal__content">
+
+                    <button
+                        type="button"
+                        class="work-modal__close"
+                        data-close-modal
+                        aria-label="Close modal">
+                        &times;
+                    </button>
+
+                    <img
+                        src="assets/img/work1.jpg"
+                        alt="Student Career Center"
+                        class="work-modal__image">
+
+                    <div class="work-modal__body">
+
+                        <span class="work-modal__category">
+                            Web & Mobile Application
+                        </span>
+
+                        <h2 class="work-modal__title">
+                            Student Career Center (SCC)
+                        </h2>
+
+                        <p class="work-modal__description">
+                            Aplikasi Student Career Center (SCC) berbasis Android
+                            dan website untuk mendukung tracer study alumni
+                            Universitas Selamat Sri serta menyediakan informasi
+                            karier dan informasi kampus.
+                        </p>
+
+                        <div class="work-modal__tech">
+                            <span>Laravel</span>
+                            <span>Flutter</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Firebase</span>
+                            <span>REST API</span>
+                        </div>
+
+                        <div class="work-modal__links">
+                            <a href="#" class="button">
+                                GitHub
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PORTFOLIO MODAL -->
+            <div class="work-modal" id="modal-portfolio">
+                <div class="work-modal__content">
+
+                    <button
+                        type="button"
+                        class="work-modal__close"
+                        data-close-modal
+                        aria-label="Close modal">
+                        &times;
+                    </button>
+
+                    <img
+                        src="assets/img/work2.jpg"
+                        alt="Portfolio Website"
+                        class="work-modal__image">
+
+                    <div class="work-modal__body">
+
+                        <span class="work-modal__category">
+                            Web Development
+                        </span>
+
+                        <h2 class="work-modal__title">
+                            Portfolio Website
+                        </h2>
+
+                        <p class="work-modal__description">
+                            Personal portfolio website untuk menampilkan profil,
+                            skills, project, dan informasi kontak.
+                        </p>
+
+                        <div class="work-modal__tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>SCSS</span>
+                        </div>
+
+                        <div class="work-modal__links">
+                            <a href="#" class="button">
+                                GitHub
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- WEB APP MODAL -->
+            <div class="work-modal" id="modal-web-app">
+                <div class="work-modal__content">
+
+                    <button
+                        type="button"
+                        class="work-modal__close"
+                        data-close-modal
+                        aria-label="Close modal">
+                        &times;
+                    </button>
+
+                    <img
+                        src="assets/img/work3.jpg"
+                        alt="Web Application"
+                        class="work-modal__image">
+
+                    <div class="work-modal__body">
+
+                        <span class="work-modal__category">
+                            Web Development
+                        </span>
+
+                        <h2 class="work-modal__title">
+                            Web Application
+                        </h2>
+
+                        <p class="work-modal__description">
+                            Web application yang dikembangkan untuk mendukung
+                            kebutuhan pengelolaan dan penyajian informasi.
+                        </p>
+
+                        <div class="work-modal__tech">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+
+                        <div class="work-modal__links">
+                            <a href="#" class="button">
+                                GitHub
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">

@@ -55,3 +55,95 @@ sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+
+/*===== SKILLS MODAL =====*/
+
+const skillsMore = document.getElementById('skills-more');
+const skillsModal = document.getElementById('skills-modal');
+const skillsModalClose = document.getElementById('skills-modal-close');
+
+if (skillsMore && skillsModal && skillsModalClose) {
+
+    skillsMore.addEventListener('click', () => {
+        skillsModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+
+    skillsModalClose.addEventListener('click', () => {
+        skillsModal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    skillsModal.addEventListener('click', (event) => {
+        if (event.target === skillsModal) {
+            skillsModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+}
+
+/*===== PROJECT MODAL =====*/
+
+const projectButtons = document.querySelectorAll('[data-project]');
+const projectModals = document.querySelectorAll('.work-modal');
+const closeModalButtons = document.querySelectorAll('[data-close-modal]');
+
+projectButtons.forEach((button) => {
+
+    button.addEventListener('click', () => {
+
+        const project = button.dataset.project;
+        const modal = document.getElementById(`modal-${project}`);
+
+        if (modal) {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+    });
+
+});
+
+
+closeModalButtons.forEach((button) => {
+
+    button.addEventListener('click', () => {
+
+        const modal = button.closest('.work-modal');
+
+        if (modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+    });
+
+});
+
+
+projectModals.forEach((modal) => {
+
+    modal.addEventListener('click', (event) => {
+
+        if (event.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+    });
+
+});
+
+document.addEventListener('keydown', (event) => {
+
+    if (event.key === 'Escape') {
+
+        projectModals.forEach((modal) => {
+            modal.classList.remove('active');
+        });
+
+        document.body.style.overflow = '';
+    }
+
+});
