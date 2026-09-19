@@ -305,6 +305,10 @@ img {
 .skills__img {
   border-radius: 0.5rem;
 }
+.skills__more {
+  border: none;
+  cursor: pointer;
+}
 
 /* ===== SKILLS MODAL ===== */
 
@@ -628,6 +632,38 @@ img {
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+}
+
+/*===== CONTACT MESSAGE =====*/
+
+.contact__message {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: var(--small-font-size);
+
+    opacity: 0;
+    transform: translateY(-5px);
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+.contact__message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contact__message.success {
+    color: #198754;
+}
+
+.contact__message.error {
+    color: #dc3545;
+}
+.contact__button:disabled {
+    opacity: .7;
+    cursor: not-allowed;
 }
 
 /* ===== FOOTER =====*/

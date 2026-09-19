@@ -147,3 +147,72 @@ document.addEventListener('keydown', (event) => {
     }
 
 });
+
+/*===== EMAILJS =====*/
+
+emailjs.init({
+    publicKey: 'rFocP-EGWokTypRn4'
+});
+
+const contactForm = document.getElementById('contact-form');
+const contactMessage = document.getElementById('contact-message');
+
+if (contactForm) {
+
+    contactForm.addEventListener('submit', function (event) {
+
+        event.preventDefault();
+
+        const submitButton = contactForm.querySelector(
+            'input[type="submit"]'
+        );
+
+        submitButton.disabled = true;
+        submitButton.value = 'Sending...';
+
+        contactMessage.textContent = '';
+        contactMessage.className = 'contact__message';
+
+        emailjs.sendForm(
+            'service_1yi0cpd',
+            'template_n1divad',
+            contactForm
+        )
+        .then(() => {
+
+            contactMessage.textContent =
+                'Message sent successfully!';
+
+            contactMessage.classList.add(
+                'contact__message',
+                'success',
+                'show'
+            );
+
+            contactForm.reset();
+
+            submitButton.disabled = false;
+            submitButton.value = 'Send Message';
+
+        })
+        .catch((error) => {
+
+            console.error('EmailJS Error:', error);
+
+            contactMessage.textContent =
+                'Failed to send message. Please try again.';
+
+            contactMessage.classList.add(
+                'contact__message',
+                'error',
+                'show'
+            );
+
+            submitButton.disabled = false;
+            submitButton.value = 'Send Message';
+
+        });
+
+    });
+
+}
