@@ -56,7 +56,8 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
 
-/*===== SKILLS MODAL =====*/
+
+//===== SKILLS MODAL =====//
 
 const skillsMore = document.getElementById('skills-more');
 const skillsModal = document.getElementById('skills-modal');
@@ -81,7 +82,14 @@ if (skillsMore && skillsModal && skillsModalClose) {
         }
     });
 
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+            skillsModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
 }
+
 
 /*===== PROJECT MODAL =====*/
 

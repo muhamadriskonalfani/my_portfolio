@@ -250,81 +250,87 @@ img {
   border-radius: 0.5rem;
 }
 
-/* ===== SKILLS =====*/
+
+/*===== SKILLS =====*/
 .skills__container {
-  row-gap: 2rem;
-  text-align: center;
+    row-gap: 2rem;
+    text-align: center;
 }
+
 .skills__subtitle {
-  margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-2);
 }
+
 .skills__text {
-  margin-bottom: var(--mb-4);
+    margin-bottom: var(--mb-4);
 }
-.skills__data {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  font-weight: var(--font-semi);
-  padding: 0.5rem 1rem;
-  margin-bottom: var(--mb-4);
-  border-radius: 0.5rem;
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
-}
-.skills__icon {
-  font-size: 2rem;
-  margin-right: var(--mb-2);
-  color: var(--first-color);
-}
-.skills__names {
-  display: flex;
-  align-items: center;
-}
-.skills__bar {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: var(--first-color);
-  height: 0.25rem;
-  border-radius: 0.5rem;
-  z-index: var(--z-back);
-}
-.skills__html {
-  width: 95%;
-}
-.skills__css {
-  width: 85%;
-}
-.skills__js {
-  width: 65%;
-}
-.skills__ux {
-  width: 85%;
-}
+
 .skills__img {
-  border-radius: 0.5rem;
+    border-radius: 0.5rem;
 }
+
+/*===== MAIN SKILLS =====*/
+.skills__main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.skills__item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(14, 36, 49, 0.10);
+    font-weight: var(--font-semi);
+    color: var(--second-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills__item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(14, 36, 49, 0.15);
+}
+
+.skills__main-icon {
+    font-size: 1.8rem;
+    color: var(--first-color);
+}
+
+/*===== MORE SKILLS BUTTON =====*/
 .skills__more {
-  border: none;
-  cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: none;
+    cursor: pointer;
 }
 
-/* ===== SKILLS MODAL ===== */
+.skills__more i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
 
+.skills__more:hover i {
+    transform: translateX(4px);
+}
+
+/*===== SKILLS MODAL =====*/
 .skills-modal {
     position: fixed;
     z-index: 1000;
     inset: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 2rem 1rem;
-
     background-color: rgba(0, 0, 0, 0.6);
-
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
@@ -337,13 +343,10 @@ img {
     position: relative;
     width: 100%;
     max-width: 600px;
-    max-height: 90vh;
-    overflow-y: auto;
-
+    margin: auto 0;
+    padding: 2rem;
     background-color: #fff;
     border-radius: 0.75rem;
-    padding: 2rem;
-
     transform: translateY(-20px) scale(0.98);
     transition: transform 0.3s ease;
 }
@@ -354,46 +357,64 @@ img {
 
 .skills-modal__title {
     color: var(--second-color);
+    margin-bottom: 1.5rem;
     text-align: center;
-    margin-bottom: var(--mb-4);
 }
 
-.skills-modal__close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    border: none;
-    background: transparent;
+.skills-modal__category {
+    margin-bottom: 1.5rem;
+}
+
+.skills-modal__category h3 {
     color: var(--second-color);
-    font-size: 2rem;
-    line-height: 1;
-    cursor: pointer;
-}
-
-.skills-modal__close:hover {
-    color: var(--first-color);
+    font-size: var(--normal-font-size);
+    margin-bottom: 0.75rem;
 }
 
 .skills-modal__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 0.75rem;
 }
 
 .skills-modal__item {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 1rem;
+    gap: 0.6rem;
+    padding: 0.75rem;
+    background-color: #f1f3f5;
     border-radius: 0.5rem;
-    box-shadow: 0px 4px 15px rgba(14, 36, 49, 0.15);
-    font-weight: var(--font-semi);
+    font-size: var(--small-font-size);
+    color: var(--second-color);
 }
 
 .skills-modal__item i {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     color: var(--first-color);
 }
+
+/*===== SKILLS MODAL CLOSE BUTTON =====*/
+.skills-modal__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #f1f3f5;
+    color: var(--second-color);
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skills-modal__close:hover {
+    color: var(--first-color);
+    transform: rotate(90deg);
+}
+
 
 /* ===== WORK =====*/
 .work__container {
@@ -483,27 +504,21 @@ img {
     transform: translateY(-2px);
 }
 
-/*===== WORK MODAL =====*/
 
+/*===== WORK MODAL =====*/
 .work-modal {
     position: fixed;
     z-index: 1000;
     inset: 0;
-
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-
     padding: 2rem 1rem;
-
-    background-color: rgba(0, 0, 0, .6);
-
+    background-color: rgba(0, 0, 0, 0.6);
     opacity: 0;
     visibility: hidden;
-
-    transition:
-        opacity .3s ease,
-        visibility .3s ease;
+    overflow-y: auto;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .work-modal.active {
@@ -513,19 +528,14 @@ img {
 
 .work-modal__content {
     position: relative;
-
     width: 100%;
     max-width: 650px;
-    max-height: 90vh;
-
-    overflow-y: auto;
-
+    margin: auto 0;
     background-color: #fff;
-    border-radius: .75rem;
-
-    transform: translateY(-20px) scale(.98);
-
-    transition: transform .3s ease;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    transform: translateY(-20px) scale(0.98);
+    transition: transform 0.3s ease;
 }
 
 .work-modal.active .work-modal__content {
@@ -533,9 +543,11 @@ img {
 }
 
 .work-modal__image {
+    display: block;
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .work-modal__body {
@@ -543,76 +555,69 @@ img {
 }
 
 .work-modal__category {
+    display: inline-block;
     color: var(--first-color);
     font-size: var(--small-font-size);
     font-weight: var(--font-semi);
+    margin-bottom: 0.5rem;
 }
 
 .work-modal__title {
     color: var(--second-color);
-    margin-top: .5rem;
     margin-bottom: 1rem;
 }
 
 .work-modal__description {
-    margin-bottom: 1.5rem;
+    color: var(--text-color);
     line-height: 1.7;
+    margin-bottom: 1.5rem;
 }
 
 .work-modal__tech {
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 0.75rem;
     margin-bottom: 1.5rem;
 }
 
 .work-modal__tech span {
-    padding: .4rem .75rem;
-
-    border-radius: .4rem;
-
-    background-color: #f1f1f1;
-
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    background-color: #f1f3f5;
+    border-radius: 0.5rem;
+    color: var(--second-color);
     font-size: var(--small-font-size);
 }
 
 .work-modal__links {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
 .work-modal__close {
     position: absolute;
     z-index: 2;
-
     top: 1rem;
     right: 1rem;
-
     width: 2.5rem;
     height: 2.5rem;
-
     border: none;
     border-radius: 50%;
-
-    background-color: #fff;
+    background-color: #f1f3f5;
     color: var(--second-color);
-
     font-size: 1.75rem;
     line-height: 1;
-
     cursor: pointer;
-
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
-
-    transition:
-        color .3s ease,
-        transform .3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .work-modal__close:hover {
     color: var(--first-color);
     transform: rotate(90deg);
 }
+
 
 /* ===== CONTACT =====*/
 .contact__input {
@@ -810,7 +815,7 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-    .skills-modal__list {
+    .skills__main {
         grid-template-columns: 1fr;
     }
 
@@ -818,16 +823,19 @@ img {
         padding: 1.5rem;
     }
 
-    .work-modal {
-        padding: 1rem;
+    .skills-modal__list {
+        grid-template-columns: 1fr;
     }
 
-    .work-modal__image {
-        height: 200px;
+    .work-modal {
+        padding: 1rem;
     }
 
     .work-modal__body {
         padding: 1.5rem;
     }
 
+    .work-modal__image {
+        height: 100%;
+    }
 }

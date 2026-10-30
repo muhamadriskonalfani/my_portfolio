@@ -80,70 +80,64 @@
                 </div>
             </section>
 
+            
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
 
-                <div class="skills__container bd-grid">          
+                <div class="skills__container bd-grid">
+
                     <div>
                         <h2 class="skills__subtitle">Technical Skills</h2>
-                        <p class="skills__text">I have experience working with various technologies for web and mobile application development. My main interests include backend development, mobile application development, database management, and API integration.</p>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
 
+                        <p class="skills__text">
+                            I specialize in Backend Development, with experience
+                            in building web applications, developing REST APIs,
+                            and managing relational databases. I also have
+                            experience in mobile application development.
+                        </p>
+
+                        <!-- Main Skills -->
+                        <div class="skills__main">
+
+                            <div class="skills__item">
+                                <i class='bx bx-code-alt skills__main-icon'></i>
+                                <span>Laravel</span>
                             </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
+
+                            <div class="skills__item">
+                                <i class='bx bx-data skills__main-icon'></i>
+                                <span>MySQL</span>
                             </div>
+
+                            <div class="skills__item">
+                                <i class='bx bx-transfer skills__main-icon'></i>
+                                <span>REST API</span>
+                            </div>
+
+                            <div class="skills__item">
+                                <i class='bx bxl-github skills__main-icon'></i>
+                                <span>Git & GitHub</span>
+                            </div>
+
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <button type="button" class="skills__more button" id="skills-more">
+
+                        <!-- More Skills Button -->
+                        <button type="button"
+                            class="skills__more button"
+                            id="skills-more">
                             More Skills
+                            <i class='bx bx-right-arrow-alt'></i>
                         </button>
+
                     </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+
+                    <div>
+                        <img src="assets/img/work3.jpg"
+                            alt="Backend Development"
+                            class="skills__img">
                     </div>
+
                 </div>
             </section>
 
@@ -162,88 +156,159 @@
 
                     <h2 class="skills-modal__title">More Skills</h2>
 
-                    <div class="skills-modal__list">
+                    <!-- Backend -->
+                    <div class="skills-modal__category">
+                        <h3>Backend Development</h3>
 
-                        <div class="skills-modal__item">
-                            <i class='bx bxl-php'></i>
-                            <span>PHP</span>
+                        <div class="skills-modal__list">
+
+                            <div class="skills-modal__item">
+                                <i class='bx bxl-php'></i>
+                                <span>PHP</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bx-code-alt'></i>
+                                <span>Laravel Sanctum</span>
+                            </div>
+
                         </div>
+                    </div>
 
-                        <div class="skills-modal__item">
-                            <i class='bx bx-code-alt'></i>
-                            <span>Laravel</span>
+                    <!-- Database & API -->
+                    <div class="skills-modal__category">
+                        <h3>Database & API</h3>
+
+                        <div class="skills-modal__list">
+
+                            <div class="skills-modal__item">
+                                <i class='bx bx-data'></i>
+                                <span>MySQL</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bx-transfer'></i>
+                                <span>JSON</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bx-test-tube'></i>
+                                <span>Postman</span>
+                            </div>
+
                         </div>
+                    </div>
 
-                        <div class="skills-modal__item">
-                            <i class='bx bxl-flutter'></i>
-                            <span>Flutter</span>
+                    <!-- Mobile Development -->
+                    <div class="skills-modal__category">
+                        <h3>Mobile Development</h3>
+
+                        <div class="skills-modal__list">
+
+                            <div class="skills-modal__item">
+                                <i class='bx bx-mobile'></i>
+                                <span>Flutter</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bx-code-alt'></i>
+                                <span>Dart</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bx-cloud'></i>
+                                <span>Firebase</span>
+                            </div>
+
                         </div>
+                    </div>
 
-                        <div class="skills-modal__item">
-                            <i class='bx bx-mobile'></i>
-                            <span>Dart</span>
+                    <!-- Frontend -->
+                    <div class="skills-modal__category">
+                        <h3>Frontend Development</h3>
+
+                        <div class="skills-modal__list">
+
+                            <div class="skills-modal__item">
+                                <i class='bx bxl-html5'></i>
+                                <span>HTML</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bxl-css3'></i>
+                                <span>CSS</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bxl-javascript'></i>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bxl-bootstrap'></i>
+                                <span>Bootstrap</span>
+                            </div>
+
                         </div>
+                    </div>
 
-                        <div class="skills-modal__item">
-                            <i class='bx bx-data'></i>
-                            <span>MySQL</span>
+                    <!-- Tools & Version Control -->
+                    <div class="skills-modal__category">
+                        <h3>Tools & Version Control</h3>
+
+                        <div class="skills-modal__list">
+
+                            <div class="skills-modal__item">
+                                <i class='bx bxl-git'></i>
+                                <span>Git</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bxl-github'></i>
+                                <span>GitHub</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bx-code-alt'></i>
+                                <span>Visual Studio Code</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bx-server'></i>
+                                <span>Laragon</span>
+                            </div>
+
                         </div>
+                    </div>
 
-                        <div class="skills-modal__item">
-                            <i class='bx bx-cloud'></i>
-                            <span>Firebase</span>
+                    <!-- Additional Skills -->
+                    <div class="skills-modal__category">
+                        <h3>Additional Skills</h3>
+
+                        <div class="skills-modal__list">
+
+                            <div class="skills-modal__item">
+                                <i class='bx bx-bug'></i>
+                                <span>Debugging</span>
+                            </div>
+
+                            <div class="skills-modal__item">
+                                <i class='bx bx-wrench'></i>
+                                <span>Bug Fixing</span>
+                            </div>
+
                         </div>
-
-                        <div class="skills-modal__item">
-                            <i class='bx bx-transfer'></i>
-                            <span>REST API</span>
-                        </div>
-
-                        <div class="skills-modal__item">
-                            <i class='bx bxl-git'></i>
-                            <span>Git</span>
-                        </div>
-
-                        <div class="skills-modal__item">
-                            <i class='bx bxl-github'></i>
-                            <span>GitHub</span>
-                        </div>
-
-                        <div class="skills-modal__item">
-                            <i class='bx bxl-bootstrap'></i>
-                            <span>Bootstrap</span>
-                        </div>
-
                     </div>
 
                 </div>
 
             </div>
 
+
             <!--===== WORK =====-->
             <section class="work section" id="work">
                 <h2 class="section-title">Work</h2>
 
-                <!-- <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div> -->
                 <div class="work__container bd-grid">
 
                     <!-- Sarana PortFolio -->
@@ -254,12 +319,7 @@
                             <h3>Sarana Portfolio</h3>
                             <p>Web Development</p>
 
-                            <button
-                                type="button"
-                                class="work__button"
-                                data-project="scc">
-                                View Project
-                            </button>
+                            <button type="button" class="work__button" data-project="sarana_portfolio"> View Project </button>
                         </div>
                     </div>
 
@@ -271,12 +331,7 @@
                             <h3>Izzarabatik</h3>
                             <p>Web Development</p>
 
-                            <button
-                                type="button"
-                                class="work__button"
-                                data-project="scc">
-                                View Project
-                            </button>
+                            <button type="button" class="work__button" data-project="izzarabatik"> View Project </button>
                         </div>
                     </div>
 
@@ -288,12 +343,7 @@
                             <h3>Tiket Bola</h3>
                             <p>Web Development</p>
 
-                            <button
-                                type="button"
-                                class="work__button"
-                                data-project="scc">
-                                View Project
-                            </button>
+                            <button type="button" class="work__button" data-project="tiket_bola"> View Project </button>
                         </div>
                     </div>
 
@@ -305,29 +355,7 @@
                             <h3>Sarana Voting</h3>
                             <p>Web Development</p>
 
-                            <button
-                                type="button"
-                                class="work__button"
-                                data-project="scc">
-                                View Project
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Caprix -->
-                    <div class="work__card">
-                        <img src="assets/img/caprix.png" alt="Caprix">
-
-                        <div class="work__overlay">
-                            <h3>Caprix</h3>
-                            <p>Web Development</p>
-
-                            <button
-                                type="button"
-                                class="work__button"
-                                data-project="scc">
-                                View Project
-                            </button>
+                            <button type="button" class="work__button" data-project="voting"> View Project </button>
                         </div>
                     </div>
 
@@ -339,12 +367,7 @@
                             <h3>Student Career Center (SCC)</h3>
                             <p>Web & Mobile Application</p>
 
-                            <button
-                                type="button"
-                                class="work__button"
-                                data-project="scc">
-                                View Project
-                            </button>
+                            <button type="button" class="work__button" data-project="scc_app"> View Project </button>
                         </div>
                     </div>
 
@@ -357,12 +380,7 @@
                             <h3>Portfolio Website</h3>
                             <p>Web Development</p>
 
-                            <button
-                                type="button"
-                                class="work__button"
-                                data-project="portfolio">
-                                View Project
-                            </button>
+                            <button type="button" class="work__button" data-project="portfolio"> View Project </button>
                         </div>
                     </div>
 
@@ -371,22 +389,195 @@
 
             <!--===== PROJECT MODALS =====-->
 
-            <!-- SCC MODAL -->
-            <div class="work-modal" id="modal-scc">
+            
+            <!-- SARANA PORTFOLIO MODAL -->
+            <div class="work-modal" id="modal-sarana_portfolio">
                 <div class="work-modal__content">
 
-                    <button
-                        type="button"
-                        class="work-modal__close"
-                        data-close-modal
-                        aria-label="Close modal">
-                        &times;
-                    </button>
+                    <button type="button" class="work-modal__close" data-close-modal aria-label="Close modal"> &times; </button>
 
-                    <img
-                        src="assets/img/scc_app_admin.png"
-                        alt="Student Career Center"
-                        class="work-modal__image">
+                    <img src="assets/img/sarana_portfolio.png" alt="Sarana Portfolio" class="work-modal__image">
+
+                    <div class="work-modal__body">
+
+                        <span class="work-modal__category">
+                            Web Development
+                        </span>
+
+                        <h2 class="work-modal__title">
+                            Sarana Portfolio
+                        </h2>
+
+                        <p class="work-modal__description">
+                            Website portfolio perusahaan yang menampilkan profil
+                            perusahaan serta berbagai proyek yang pernah dikerjakan.
+                            Website ini menjadi media untuk memperkenalkan layanan,
+                            hasil pekerjaan, dan portofolio proyek perusahaan kepada
+                            calon klien.
+                        </p>
+
+                        <div class="work-modal__tech">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="work-modal__links">
+                            <a href="#" class="button" target="_blank" rel="noopener noreferrer">
+                                Visit Website
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- IZZARABATIK MODAL -->
+            <div class="work-modal" id="modal-izzarabatik">
+                <div class="work-modal__content">
+
+                    <button type="button" class="work-modal__close" data-close-modal aria-label="Close modal"> &times; </button>
+
+                    <img src="assets/img/izzarabatik.png" alt="Izzarabatik" class="work-modal__image">
+
+                    <div class="work-modal__body">
+
+                        <span class="work-modal__category">
+                            E-Commerce Website
+                        </span>
+
+                        <h2 class="work-modal__title">
+                            Izzarabatik
+                        </h2>
+
+                        <p class="work-modal__description">
+                            Website penjualan pakaian batik yang menyediakan
+                            informasi produk bagi pelanggan. Website ini bertujuan
+                            memudahkan pelanggan dalam melihat koleksi pakaian batik
+                            serta mendapatkan informasi produk yang tersedia.
+                        </p>
+
+                        <div class="work-modal__tech">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="work-modal__links">
+                            <a href="#" class="button" target="_blank" rel="noopener noreferrer">
+                                Visit Website
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- TIKET BOLA MODAL -->
+            <div class="work-modal" id="modal-tiket_bola">
+                <div class="work-modal__content">
+
+                    <button type="button" class="work-modal__close" data-close-modal aria-label="Close modal"> &times; </button>
+
+                    <img src="assets/img/tiket_bola.png" alt="Tiket Bola" class="work-modal__image">
+
+                    <div class="work-modal__body">
+
+                        <span class="work-modal__category">
+                            Ticket Booking Website
+                        </span>
+
+                        <h2 class="work-modal__title">
+                            Tiket Bola
+                        </h2>
+
+                        <p class="work-modal__description">
+                            Website pemesanan tiket pertandingan sepak bola
+                            yang dirancang untuk membantu pengguna memperoleh
+                            informasi pertandingan dan melakukan pemesanan tiket
+                            secara online.
+                        </p>
+
+                        <div class="work-modal__tech">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="work-modal__links">
+                            <a href="#" class="button" target="_blank" rel="noopener noreferrer">
+                                Visit Website
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SARANA VOTING MODAL -->
+            <div class="work-modal" id="modal-voting">
+                <div class="work-modal__content">
+
+                    <button type="button" class="work-modal__close" data-close-modal aria-label="Close modal"> &times; </button>
+
+                    <img src="assets/img/voting.png" alt="Sarana Voting" class="work-modal__image">
+
+                    <div class="work-modal__body">
+
+                        <span class="work-modal__category">
+                            Cryptocurrency Voting Website
+                        </span>
+
+                        <h2 class="work-modal__title">
+                            Sarana Voting
+                        </h2>
+
+                        <p class="work-modal__description">
+                            Website voting berbasis blockchain yang digunakan
+                            untuk mendukung proses pemungutan suara terkait
+                            cryptocurrency. Proyek ini berfokus pada penyediaan
+                            platform voting digital dengan pemanfaatan teknologi
+                            blockchain.
+                        </p>
+
+                        <div class="work-modal__tech">
+                            <span>Blockchain</span>
+                            <span>Cryptocurrency</span>
+                            <span>PHP</span>
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+
+                        <div class="work-modal__links">
+                            <a href="#" class="button" target="_blank" rel="noopener noreferrer">
+                                Visit Website
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCC MODAL -->
+            <div class="work-modal" id="modal-scc_app">
+                <div class="work-modal__content">
+
+                    <button type="button" class="work-modal__close" data-close-modal aria-label="Close modal"> &times; </button>
+
+                    <img src="assets/img/scc_app_admin.png" alt="Student Career Center" class="work-modal__image">
 
                     <div class="work-modal__body">
 
@@ -399,10 +590,7 @@
                         </h2>
 
                         <p class="work-modal__description">
-                            Aplikasi Student Career Center (SCC) berbasis Android
-                            dan website untuk mendukung tracer study alumni
-                            Universitas Selamat Sri serta menyediakan informasi
-                            karier dan informasi kampus.
+                            Aplikasi Student Career Center (SCC) berbasis Android dan website untuk mendukung tracer study alumni Universitas Selamat Sri serta menyediakan informasi karier dan informasi kampus.
                         </p>
 
                         <div class="work-modal__tech">
@@ -429,18 +617,9 @@
             <div class="work-modal" id="modal-portfolio">
                 <div class="work-modal__content">
 
-                    <button
-                        type="button"
-                        class="work-modal__close"
-                        data-close-modal
-                        aria-label="Close modal">
-                        &times;
-                    </button>
+                    <button type="button" class="work-modal__close" data-close-modal aria-label="Close modal"> &times; </button>
 
-                    <img
-                        src="assets/img/portfolio.png"
-                        alt="Portfolio Website"
-                        class="work-modal__image">
+                    <img src="assets/img/portfolio.png" alt="Portfolio Website" class="work-modal__image">
 
                     <div class="work-modal__body">
 
@@ -453,15 +632,13 @@
                         </h2>
 
                         <p class="work-modal__description">
-                            Personal portfolio website untuk menampilkan profil,
-                            skills, project, dan informasi kontak.
+                            Personal portfolio website untuk menampilkan profil, skills, project, dan informasi kontak.
                         </p>
 
                         <div class="work-modal__tech">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
-                            <span>SCSS</span>
                         </div>
 
                         <div class="work-modal__links">
@@ -474,67 +651,12 @@
                 </div>
             </div>
 
-
-            <!-- WEB APP MODAL -->
-            <div class="work-modal" id="modal-web-app">
-                <div class="work-modal__content">
-
-                    <button
-                        type="button"
-                        class="work-modal__close"
-                        data-close-modal
-                        aria-label="Close modal">
-                        &times;
-                    </button>
-
-                    <img
-                        src="assets/img/work3.jpg"
-                        alt="Web Application"
-                        class="work-modal__image">
-
-                    <div class="work-modal__body">
-
-                        <span class="work-modal__category">
-                            Web Development
-                        </span>
-
-                        <h2 class="work-modal__title">
-                            Web Application
-                        </h2>
-
-                        <p class="work-modal__description">
-                            Web application yang dikembangkan untuk mendukung
-                            kebutuhan pengelolaan dan penyajian informasi.
-                        </p>
-
-                        <div class="work-modal__tech">
-                            <span>PHP</span>
-                            <span>Laravel</span>
-                            <span>MySQL</span>
-                            <span>Bootstrap</span>
-                        </div>
-
-                        <div class="work-modal__links">
-                            <a href="#" class="button">
-                                GitHub
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <!-- <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form> -->
                     <form id="contact-form" class="contact__form">
                         <input type="text" name="name" placeholder="Name" class="contact__input" required>
                         <input type="email" name="email" placeholder="Email" class="contact__input" required>
@@ -549,11 +671,6 @@
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Alfan</p>
-            <!-- <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div> -->
             <div class="footer__social">
                 <a href="mailto:muhamadriskonalfani@gmail.com" class="footer__icon">
                     <i class='bx bx-envelope'></i>
